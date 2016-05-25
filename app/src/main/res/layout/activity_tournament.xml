@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.madebydragons.elocalculator.TournamentActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tournament_table">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/your_rating_before" android:id="@+id/rating_before_tournament" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty1" android:textAlignment="center" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/your_rating_after" android:id="@+id/rating_after_tournament" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/empty2" android:textAlignment="center" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty3" android:textAlignment="center" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"
+                android:ems="3" android:id="@+id/your_rating" android:maxLength="4" />
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty4" android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="3"
+                android:id="@+id/your_rating_after"
+                android:maxLength="4"
+                android:focusable="false"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty5" android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty6" android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+             android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/opponents_elo" android:id="@+id/opponents_elo" android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty7" android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/match_result" android:id="@+id/empty8" android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty9" android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="" android:id="@+id/empty10" android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:id="@+id/add_button_row">
+            <ImageButton android:contentDescription="@string/add_match" android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:onClick="insertRow"/>
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

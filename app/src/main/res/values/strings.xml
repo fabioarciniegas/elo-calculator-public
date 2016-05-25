@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Elo Calculator</string>
+    <string name="app_name_single_match_mode">Elo - Single match</string>
+    <string name="app_name_tournament_mode">Elo - Tournament</string>
+    <string name="your_rating">Your Elo</string>
+    <string name="opponents_rating">Opponent\'s</string>
+    <string name="versus">vs</string>
+    <string name="loose_hint">recalculate value after loss</string>
+    <string name="individual_win_value">0</string>
+    <string name="individual_draw_value">0</string>
+    <string name="individual_loose_value">0</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main">Elo Calculator (single)</string>
+
+    <!-- Strings related to Settings -->
+    <string name="pref_title_K_value">K Value</string>
+    <string name="pref_description_K_value">the K value in the ELO equation determines how much a single match can affect the player\'s score.</string>
+
+    <string name="pref_use_custom_K_value">Type of K factor</string>
+    <string name="pref_description_use_custom_K_value"> </string>
+    <string name="pref_switch_use_custom_K_value_off">Custom</string>
+    <string name="pref_switch_use_custom_K_value_on">Standard</string>
+
+
+<!-- The following must correspond to the values accepted by the KFactorFactory constructor.
+     They do not change given localization. The titles associated with them (see below) do -->
+
+    <!-- Begin KFactorFactory IDS-->
+    <string name="k_factor_chess_com">chess.com</string>
+    <string name="k_factor_icc">icc</string>
+    <string name="k_factor_approx_fide">approx_fide</string>
+    <string name="k_factor_approx_uscf">approx_uscf</string>
+    <!-- END KFactorFactory IDS-->
+
+    <string name="pref_standard_k_title">Standard K</string>
+    <string-array name="pref_standard_k_titles">
+        <item>Chess.com (K=16)</item>
+        <item>ICC (K=32)</item>
+        <item>Approx. FIDE (K=20 for elo less than 2400, 10 otherwise)</item>
+        <item>Approx. USCF (linear between 68 for elo 200 and 14.8 for 2700+) </item>
+    </string-array>
+    <string-array name="pref_standard_k_values">
+        <item>@string/k_factor_chess_com</item>
+        <item>@string/k_factor_icc</item>
+        <item>@string/k_factor_approx_fide</item>
+        <item>@string/k_factor_approx_uscf</item>
+    </string-array>
+
+    <string name="pref_custom_k_value">Custom K</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_tournament_mode">Tournament Mode</string>
+    <string name="pref_description_tournament_mode">Resolve more than one match before updating score</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <string name="title_activity_preferences">PreferencesActivity</string>
+    <string name="title_activity_tournament">Tournament</string>
+    <string name="first_game">First game</string>
+    <string name="action_settings">Settings</string>
+    <string name="your_rating_before">Your starting Elo</string>
+    <string name="your_rating_after">Final Elo</string>
+    <string name="win_hint">win match</string>
+    <string name="matches">matches</string>
+    <string name="opponents_elo">Opponent\'s elo</string>
+    <string name="match_result">Match result</string>
+    <string name="add_match">add match</string>
+    <string name="delete_match">delete match</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="title_activity_help">Help</string>
+</resources>

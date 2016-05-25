@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+
+
+    <SwitchPreference
+        android:key="use_standard_k"
+        android:title="@string/pref_use_custom_K_value"
+        android:summary="@string/pref_description_use_custom_K_value"
+        android:switchTextOff="@string/pref_switch_use_custom_K_value_off"
+        android:switchTextOn="@string/pref_switch_use_custom_K_value_on"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="standard_k"
+        android:title="@string/pref_standard_k_title"
+        android:summary="..."
+        android:entries="@array/pref_standard_k_titles"
+        android:entryValues="@array/pref_standard_k_values"
+        android:defaultValue="@string/k_factor_chess_com"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:dependency="use_standard_k"
+        />
+
+    <EditTextPreference
+        android:key="custom_k"
+        android:title="@string/pref_custom_k_value"
+        android:summary="..."
+        android:digits="0123456789."
+        android:defaultValue="10"
+        android:maxLength="4"
+        />
+
+
+</PreferenceScreen>
